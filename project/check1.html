@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #maincn{
+            display: flex;
+            gap:30px;
+            margin: auto;
+        }
+        #cnten1{
+            height:950px;
+            width: 800px;
+            /* border:1px solid black; */
+            margin-left: 120px;
+           
+        }
+        #cnten1>img{
+            height: 60px;
+            padding-left: 260px;
+            margin-top: 50px;
+            
+        }
+        #cnten2{
+            height:950px;
+            width:450px;
+            /* border:1px solid black; */
+            background-color: rgba(202, 199, 199, 0.247);
+        }
+       #cnten1>p{
+            text-align: center;
+       }
+       .Ram{
+           display: flex;
+           justify-content: space-between;
+       }
+       #email{
+           width:99%;
+           height:35px;
+           margin-bottom: 10px;
+       }
+       .cbox{
+           display: flex;
+           margin-top: 10px;
+       }
+      #conn{
+          width:100%;
+          height: 40px;
+      }
+      #cdm{
+          margin-top: 10px;
+          /* padding-left: 20px; */
+         
+      }
+      .name{
+          width: 390px;
+          height: 35px;
+          margin-top: 10px;
+      }
+      .nme{
+          width: 99%;
+          height: 35px;
+          margin-top: 10px;
+      }
+      #subh{
+          display: flex;
+          gap:20px;
+          /* justify-content: space-around; */
+          margin-top: 10px;
+      }
+      .ame{
+          height: 35px;
+          width:248px;
+      }
+      #hp1{
+          display: flex;
+          height: 40px;
+        justify-content:space-between; 
+      }
+      #clas{
+          height:60px;
+          width:200px;
+          border: none;
+          background-color: black;
+          color: white;
+          border-radius: 5px;
+      }
+      #san{
+          height: 1px;
+          width: 100%;
+          background-color: rgb(158, 157, 157);
+          margin-top: 70px;
+          display: flex;
+          gap:30px;
+      }
+    </style>
+</head>
+<body>
+   <div id="maincn">
+        <!-- 1st parent div -->
+    <div id="cnten1">
+        <img src="https://cdn.shopify.com/s/files/1/0052/7551/6995/files/FABBAG-LOGO-FINAL.png?10181">
+        <p> Cart > Information > Shipping > Payment</p>
+
+        <div class="Ram">
+            <h3> Contact information</h3>
+            <p> Alredy have an account?Log in</p>
+        </div>
+        <input type="text" placeholder="Email" id="email"/>
+
+        <div class="cbox">
+            <input type="checkbox"  />
+            <div> Email me with news and offers</div>
+        </div>
+        <h2>Shipping address</h2>
+        <select id="conn" value="">
+            <option value="disabled selected hidden">Country/region </option>
+            <option value="India ">India</option>
+        </select>
+        <div id="cdm">
+            <input type="text" placeholder="First name" class="name"/>
+            <input type="text" placeholder="Last name" class="name"/>
+        </div>
+        <input type="text" placeholder="Company (optional)" class="nme"/>
+        <input type="text" placeholder="Adress" class="nme"/>
+        <input type="text" placeholder="Apartment,suite.etc(optional)" class="nme"/>
+
+        <div id="subh">
+            <div><input type="text" placeholder="City" class="ame"/></div>
+            <div >
+                <select class="ame">
+                    <option value="disabled selected hidden">State</option>
+                    <option value="Odisha ">Odisha</option>
+                    <option value="Karnataka ">Karnataka</option>
+                    <option value=" Delhi">Delhi</option>
+                </select>
+            </div>
+            <div><input type="text" placeholder="Pin code" class="ame"/></div>    
+        </div>
+        <input type="text" placeholder="Phone" class="nme"/>
+
+        <div class="cbox">
+            <input type="checkbox"  />
+            <div>Save this information for next time</div>
+        </div>
+
+        <div id="hp1">
+            <p> < Return to cart</p>
+           <button type="button" onclick=" " id="clas"> Continue to shopping</button>
+        </div>
+
+        <div id="san">
+        <p>Refund policy  </p>
+        <p> Privacy policy</p>
+        <p> Terms of service</p>
+       </div>
+    </div>
+    
+   <!-- 2nd parent div -->
+    <div id="cnten2"></div>
+   </div>
+</body>
+</html>

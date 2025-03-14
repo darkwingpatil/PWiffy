@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <style>
+       
+        #form{
+            width:25%;
+            margin: auto;
+           
+        }
+        #f1{
+            text-align: center;
+        }
+        #fb{
+            background-color:rgb(70, 70, 146) ;
+            width:99% ;
+            /* height: 23px; */
+            color: white;
+            border-radius: 4px;
+            padding: 5px;
+           
+        }
+       
+        #gg{
+            background-color: rgb(204, 51, 51);
+            width:99% ;
+            /* height: 23px; */
+            margin-top: 2px;
+            border-radius: 4px;
+            padding: 5px;
+        }
+        /* #gg:hover{
+            opacity: 0.7;
+        } */
+        #email{
+            width:98% ;
+            height: 27px;
+            border: 1px solid rgb(214, 211, 211);
+        }
+        #pass{
+            width:98% ;
+            height: 27px;
+            border: 1px solid rgb(214, 211, 211);
+        }
+        #secon{
+            display: flex;
+            justify-content: space-between;
+            width:100%;
+            margin-top: 10px;
+        }
+        #secon>div:nth-child(1){
+            color:red ;
+        }
+        #secon>div:nth-child(2):hover{
+            color:rgb(241, 176, 55)  ;
+            cursor: pointer;
+        }
+        #bt1{
+            width:100%;
+            margin-top: 10px;
+            height: 35px;
+            background-color:rgb(241, 176, 55) ;
+            border:none;
+        }
+        #bt1:hover{
+            background-color: black;
+            color: white;
+        }
+        #trd{
+            display: flex;
+            margin-top: 20px;
+        }
+        .lin{
+            height:0px;
+            width: 250px;
+            border: 1px solid gray;
+            margin-top: 9px;
+            background: gray;
+           
+        }
+        #bt2{
+            margin-top: 20px;
+            width: 100%;
+            height: 35px;
+            background-color:rgb(241, 176, 55) ;
+            border:none;
+        }
+        #bt2:hover{
+            background-color: black;
+            color: white;
+        }
+        #fdn{
+           display: flex;
+           background-color:rgb(70, 70, 146) ;
+           height:35px;
+           width:100%;
+           border-radius: 4px;
+           cursor: pointer;
+        }
+        #fdn>div:nth-child(2){
+            /* height: 15px;
+            width:15px; */
+            /* margin-right: 5px; */
+            font-size: 29px;
+        }
+        #fdn:hover{
+            opacity: 0.5;
+        }
+        #ggn{
+            display: flex;
+            background-color: rgb(204, 51, 51);
+           height:33px;
+           width:100%;
+           border-radius: 4px;
+           cursor: pointer;
+           margin-top: 20px;
+        }
+        #ggn>div:nth-child(2){
+            /* height: 15px;
+            width:15px; */
+            /* margin-right: 5px; */
+            font-size: 29px;
+        }
+        #ggn:hover{
+            opacity: 0.5;
+        }
+        p+p{
+            color: red;
+        }
+        .em{
+            display: flex;
+        }
+       
+    </style>
+</head>
+<body>
+    <!-- <main> -->
+        <form action="" id="form">
+            <h1 id="f1">Create An Account </h1>
+            <div id="fdn">
+                <div id="fb">Sign in with email</div>
+                <div><i class="fab fa-facebook" ></i></div>
+            </div>
+           
+            <!-- </div> -->
+            <div id="ggn">
+                <div id="gg">Sign in with Google</div>
+                <div><i class="fab fa-google"></i></div>
+            </div>
+            <div class="em">
+                <p>First Name</p>
+                <p>*</p>
+            </div>
+            <input type="text"id="pass"  />
+            <div class="em">
+                <p>Last Name</p>
+                <p>*</p>
+            </div>
+            <input type="text"id="pass"  />
+
+            <div class="em">
+                <p>Email Address</p>
+                <p>*</p>
+            </div>
+
+            <input type="email" name="email"id="email" />
+            <div class="em">
+                <p>Password</p>
+                <p>*</p>
+            </div>
+            <input type="text"id="pass"  />
+
+           <div id="secon">
+            <div>*Required Fields</div>
+            <div>Forgot your password?</div>
+           </div>
+           <button id="bt1">Create an Account</button>
+
+           <div id="trd">
+               <div class="lin"></div>
+               <div>Or</div>
+               <div class="lin"></div>
+           </div>
+           <button id="bt2">Sign In</button>
+        </form>
+    <!-- </main> -->
+</body>
+</html>
+
